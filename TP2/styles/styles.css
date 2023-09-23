@@ -1,3 +1,23 @@
+
+:root {
+    --primaryColorLight2: #6716D2;
+    --primaryColorLight1: #5B09C7;
+    --primaryColor: #4907A1;
+    --primaryColorDark1: #3E0589;
+    --primaryColorDark2: #330472;
+    
+    --secondaryColorLight2: #756F6F;
+    --secondaryColorLight1: #767279;
+    --secondaryColor: #3F3C3C;
+    --secondaryColorDark1: #252525;
+    --secondaryColorDark2: #252525;
+
+    
+    --tamaño-fuente: 16px;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -108,6 +128,10 @@ input[type="text"] {
 .card-price {
     font-weight: bold;
     color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .add-to-cart {
