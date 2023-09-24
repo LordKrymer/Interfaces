@@ -2,8 +2,8 @@ window.addEventListener('DOMContentLoaded',function(){inicializar()})
 console.log("el que lee esto es puto");
 
 function inicializar(){
-    fetchArchivo("home.html");
-    rutaUrl("home.html"); 
+    fetchArchivo("logIn.html");
+    rutaUrl("logIn.html"); 
 }
 
 async function fetchArchivo(ruta){ 

@@ -219,3 +219,38 @@ input[type="text"] {
 .gallery-card:hover {
     transform: scale(1.05);
 }
+
+.login-register {
+    height: 900px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register img {
+    z-index: 2;
+}
+
+#login {
+    height: 340px;
+    width: 600px;
+    background-color: var(--secondaryColor);
+    opacity: 0.8;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+}
+
+#login div {
+    padding: 10px;   
+}
+
+#login input {
+    border-radius: 20%;
+    background-color: var(--secondaryColorLight1);
+    height: 20px;
+    width: 200px;
+    color: var(--white);
+}
