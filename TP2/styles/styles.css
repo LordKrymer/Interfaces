@@ -232,7 +232,7 @@ input[type="text"] {
     z-index: 2;
 }
 
-#login {
+.login {
     height: 340px;
     width: 600px;
     background-color: var(--secondaryColor);
@@ -243,11 +243,11 @@ input[type="text"] {
     border-radius: 3%;
 }
 
-#login div {
+.login div {
     padding: 10px;   
 }
 
-#login input {
+.login input {
     border-radius: 20%;
     background-color: var(--secondaryColorLight1);
     height: 20px;
