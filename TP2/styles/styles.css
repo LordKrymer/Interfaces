@@ -12,7 +12,7 @@
     --secondaryColorDark2: #252525;
     --black:#100B16;
     --white:#F8F3FF;
-    --hightLight:#FFC300;
+    --highLight:#FFC300;
     --success:#04AA6D;
     --error:#FF2020;
     --warning:#FFE141;
@@ -263,4 +263,64 @@ input[type="text"] {
     height: 20px;
     width: 200px;
     color: var(--white);
+}
+
+
+footer {
+    color: var(--white);
+    display: flex;
+    bottom: 0;
+    height: 350px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.footer-list-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-list {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-list p{
+
+}
+.footer-list ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-message{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.footer-message p{
+ text-align: center; 
+}
+
+.footer-networks{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.network-logo{
+    background-blend-mode: exclusion;
 }

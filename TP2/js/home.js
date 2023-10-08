@@ -1,1 +1,4 @@
-document.querySelectorAll(".card").forEach((e)=>{e.addEventListener("click",()=>{fetchArchivo("pdp.html")})})
+document.querySelectorAll(".card").forEach((e)=>{e.addEventListener("click",()=>{changeRoute("pdp")})})
+document.querySelectorAll(".gallery-card").forEach((e)=>{e.addEventListener("click",()=>{changeRoute("pdp")})})
+
+
