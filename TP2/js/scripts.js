@@ -3,7 +3,7 @@ console.log("el que lee esto es puto");
 
 function inicializar(){
     fetchArchivo("home.html");
-    rutaUrl("home.html"); 
+    rutaUrl("home.html");
 }
 
 async function fetchArchivo(ruta){ 

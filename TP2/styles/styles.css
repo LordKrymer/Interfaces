@@ -128,11 +128,21 @@ input[type="text"] {
     margin-left: 10px;
     cursor: pointer;
 }
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
 .carousel {
+    height: 650px;
+    margin: 100px 0 100px 0;
     display: flex;
     overflow-x: auto;
     width: 100%;
-    scroll-snap-type: x mandatory;
+    max-width: 1200px;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .card {
