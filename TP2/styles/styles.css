@@ -5,7 +5,7 @@
     --primaryColor: #4907A1;
     --primaryColorDark1: #3E0589;
     --primaryColorDark2: #330472;
-    --secondaryColorLight2: #756F6F;
+    --secondaryColorLight2: rgba(255, 255, 255, 0.20);
     --secondaryColorLight1: #767279;
     --secondaryColor: #3F3C3C;
     --secondaryColorDark1: #252525;
@@ -47,7 +47,7 @@ h3 {
     height: 24px;
 }
 
-text{
+p{
     font-family: var(--familyFontNunito);
     height: 14px;
 }
@@ -261,9 +261,18 @@ input[type="text"] {
     border-radius: 3%;
 }
 
+#registerForm {
+    height: 800px;
+}
+
+.userForm p {
+    color: var(--white);
+    padding-top: 10px;
+}
 
 .userForm div {
-    padding: 10px;   
+    padding-bottom: 10px; 
+    height: 60px;  
 }
 
 .userForm input {
@@ -273,6 +282,10 @@ input[type="text"] {
     height: 20px;
     width: 200px;
     color: var(--white);
+}
+
+.userForm input::placeholder {
+    color:var(--secondaryColorLight2);
 }
 
 .userForm button {
@@ -285,6 +298,7 @@ input[type="text"] {
     border: 1px solid var(--black);
     background: var(--primaryColor);
     color: var(--white);
+    box-shadow: inset 1px 1px 5px var(--black);
     text-align: center;
     font-family: Nunito;
     font-size: 14px;
