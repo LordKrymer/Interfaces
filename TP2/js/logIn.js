@@ -1,11 +1,15 @@
 
 let loginButton = document.getElementById("login");
+let registerButton = document.getElementById("register");
 
-loginButton.addEventListener("click",function(e){
+document.querySelectorAll("button").forEach(b => {b.addEventListener("click",function(e){
     e.preventDefault();
-});
+});})
 
 loginButton.addEventListener("click",()=>{
+    changeRoute("home")
+});
+registerButton.addEventListener("click",()=>{
     changeRoute("home")
 });
 

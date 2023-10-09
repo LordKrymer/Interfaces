@@ -289,13 +289,10 @@ input[type="text"] {
     color:var(--secondaryColorLight2);
 }
 
-.userForm button {
+.button-primary {
     width: 157px;
     height: 41px;
     border-radius: 100px;
-}
-
-.button-primary {
     border: 1px solid var(--black);
     background: var(--primaryColor);
     color: var(--white);
@@ -314,6 +311,9 @@ input[type="text"] {
 }
 
 .button-secondary {
+    width: 157px;
+    height: 41px;
+    border-radius: 100px;
     background-color: transparent;
     border: transparent 1px ;
     color: var(--white);
@@ -339,7 +339,7 @@ footer {
     align-items: flex-end;
 }
 
-.footer-list-container{
+.footer-list-container {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -352,14 +352,14 @@ footer {
     justify-content: space-evenly;
 }
 
-.footer-list ul{
+.footer-list ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.footer-message{
+.footer-message {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -370,40 +370,22 @@ footer {
     margin-left: 30px;
 }
 
-.footer-message h3{
+.footer-message h3 {
     margin-left: 45px;
     height: fit-content;
     text-align: center;
 }
 
-.footer-networks{
+.footer-networks {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.network-logo{
+.network-logo {
     background-blend-mode: exclusion;
 }
-
-/* .pdp-container{
-    width: 1200px;
-    height: 600px;
-    background-color: var(--secondaryColor);
-    opacity: 0.8;
-}
-
-.pdp-container .left-column{
-    width: 400px;
-    height: 500px;
-}
-
-.pdp-container .right-column{
-    width: 750px;
-    height: 500px;
-    display: flex;
-} */
 
 .login-register {
     display: flex;
