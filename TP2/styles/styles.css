@@ -261,17 +261,6 @@ input[type="text"] {
     border-radius: 3%;
 }
 
-.userForm button {
-    height: fit-content;
-    width: fit-content;
-    background-color: var(--primaryColor);
-}
-
-.userForm button:hover{
-    transition-duration: 3s;
-    transform: rotate(180deg);
-    /* transform: matrix(-2,0,0,-2,0,0); */
-}
 
 .userForm div {
     padding: 10px;   
@@ -284,6 +273,46 @@ input[type="text"] {
     height: 20px;
     width: 200px;
     color: var(--white);
+}
+
+.userForm button {
+    width: 157px;
+    height: 41px;
+    border-radius: 100px;
+}
+
+.button-primary {
+    border: 1px solid var(--black);
+    background: var(--primaryColor);
+    color: var(--white);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.button-primary:hover {
+    border: 1px solid var(--black);
+    background: var(--primaryColorLight2)
+}
+
+.button-secondary {
+    background-color: transparent;
+    border: transparent 1px ;
+    color: var(--white);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.button-secondary:hover {
+    border: var(--white);
+    border: solid 1px ;
 }
 
 footer {
