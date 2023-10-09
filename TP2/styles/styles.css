@@ -18,6 +18,7 @@
     --warning:#FFE141;
 
     --familyFontNunito:'Nunito Sans', sans-serif;
+
     --buttonText{
         font-family: var(--familyFontNunito);
         height: 14px;
@@ -242,29 +243,48 @@ input[type="text"] {
     z-index: 2;
 }
 
-.login {
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.userForm{
     height: 340px;
     width: 600px;
     background-color: var(--secondaryColor);
     opacity: 0.8;
     z-index: 1;
-    display: flex;
     justify-content: center;
     border-radius: 3%;
 }
 
-.login div {
+.userForm button {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--primaryColor);
+}
+
+.userForm button:hover{
+    transition-duration: 3s;
+    transform: rotate(180deg);
+    /* transform: matrix(-2,0,0,-2,0,0); */
+}
+
+.userForm div {
     padding: 10px;   
 }
 
-.login input {
-    border-radius: 20%;
+.userForm input {
+    border-radius: 30px;
+    border: 00;
     background-color: var(--secondaryColorLight1);
     height: 20px;
     width: 200px;
     color: var(--white);
 }
-
 
 footer {
     color: var(--white);
@@ -288,9 +308,6 @@ footer {
     justify-content: space-evenly;
 }
 
-.footer-list p{
-
-}
 .footer-list ul{
     height: 100%;
     display: flex;
@@ -303,22 +320,23 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 30%;
     padding: 15px;
     margin-left: 30px;
 }
 
-.footer-message p{
- text-align: center; 
+.footer-message h3{
+    margin-left: 45px;
+    height: fit-content;
+    text-align: center;
 }
 
 .footer-networks{
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px 0;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .network-logo{

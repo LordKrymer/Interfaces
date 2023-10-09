@@ -1,21 +1,21 @@
-window.addEventListener('DOMContentLoaded',function(){inicializar()})
+window.addEventListener('DOMContentLoaded',function(){initialize()})
 
 document.getElementById("logo").addEventListener("click",()=>{
-    fetchArchivo("home");
-    rutaUrl("home");
+    fetchFile("home");
+    routUrl("home");
 });
 
 document.getElementById("loginButton").addEventListener("click",()=>{
-    fetchArchivo("logIn");
-    rutaUrl("logIn");
+    fetchFile("logIn");
+    routUrl("logIn");
 });
 
-function inicializar(){
-    fetchArchivo("logIn");
-    rutaUrl("logIn"); 
+function initialize(){
+    fetchFile("logIn");
+    routUrl("logIn"); 
 }
 
-async function fetchArchivo(ruta){ 
+async function fetchFile(ruta){ 
     let promise = await fetch("html/"+ruta+".html");
     let contenedor = document.getElementById("index");
     let contenido  = await promise.text();
@@ -30,18 +30,17 @@ function inyectionJs(route){
     return script;
 }
 
-function rutaUrl(ruta){// muestra la ruta url
+function routUrl(ruta){// muestra la ruta url
     history.pushState({page:ruta+".html"},"index","/"+ruta);
 }
 
 function changeRoute(ruta){
-    fetchArchivo(ruta);
-    rutaUrl(ruta);
+    fetchFile(ruta);
+    routUrl(ruta);
 }
 
 window.addEventListener('popstate', function(){
-    fetchArchivo(history.state.page);
-    inicializarContacto(this.history.state.page);
+    fetchFile(history.state.page);
 });
 
 
