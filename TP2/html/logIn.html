@@ -2,7 +2,7 @@
     <img src="" alt="marcaDeAgua">
 
     <div id="registerForm" class="userForm d-none" >
-        <form action="post">
+        <form class="loginForm" action="post">
             <div>
                 <p>Full name</p>
                 <input type="text"placeholder="Full Name">
@@ -13,7 +13,7 @@
             </div>
             <div>
                 <p>Email</p>
-                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Email">
             </div>
             <div>
                 <p>Edad</p>
@@ -27,22 +27,30 @@
                 <p>Confirm Password</p>
                 <input type="password" placeholder="Confirm password">
             </div>
-            <button id="register" class="button-primary">Registrar</button>
-            <button id="showLoginForm" class="button-secondary">Iniciar Sesion</button>
+            <div>
+                <button id="register" class="button-primary">Registrar</button>
+                <button id="showLoginForm" class="button-secondary">Iniciar Sesion</button>
+            </div>
+
         </form>
         
     </div>
 
     <div id="loginForm" class="userForm d-flex">
-        <form action="post">
+        <form class="loginForm" action="post">
             <div>
-                <input type="username"placeholder="username"></label>
+                <p>Nickname</p>
+                <input type="text"placeholder="Nickname">
+            </div>  
+            <div>
+                <p>Password</p>
+                <input type="password" placeholder="Password">
             </div>
             <div>
-                <input type="password" placeholder="password"required>
+                <button id="login" class="button-primary">login</button>
+                <button id="showRegisterForm" class="button-secondary">registrarme</button>
             </div>
-            <button id="login" class="button-primary">login</button>
-            <button id="showRegisterForm" class="button-secondary">registrarme</button>
+
         </form>
 
     </div>
