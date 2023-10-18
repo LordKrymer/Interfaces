@@ -80,7 +80,8 @@
 }
 
 .hamburger-button {
-    background-color: transparent;
+    background-color:  var(--secondaryColorDark1);
+    border-radius: 6px;
     border: none;
     font-size: 24px;
     color: var(--white);
