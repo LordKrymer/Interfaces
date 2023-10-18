@@ -14,15 +14,6 @@
     height: 30px;    
 }
 
-.hamburger-button {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #fff;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
 .navbar-logo a {
     text-decoration: none;
     color: #fff;
@@ -31,26 +22,45 @@
 }
 
 .navbar-search {
+    margin-inline: 350px;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color:#767279;
+    border-radius: 40px;
+    width:200px;
+}
+
+.navbar-search input::placeholder{
+    color:var(--secondaryColorLight2);
 }
 
 .search-button {
-    background-color: #555;
-    color: #fff;
+    background-color:transparent transparent;
     border: none;
     border-radius: 5px;
-    padding: 8px 12px;
+    padding: 7px 12px;
     cursor: pointer;
+    opacity: .7;
+}
+
+.navbar-search input {
+    all: unset;
+    padding: 0px 8px;
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.navbar-search input:focus {
+    color: var(--secondaryColor);
 }
 
 .navbar-icons {
     display: flex;
     align-items: center;
 }
-
 
 .cart-button {
     background-color: transparent;
@@ -67,4 +77,64 @@
     margin-left: 10px;
     border-radius: 100%;
     border-color: var(--white);
+}
+
+.hamburger-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--white);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hamburger-button:hover{
+    transform: matrix(1.05,tan(0),tan(3),1.05,0,0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    height: 700px;
+    overflow: auto;
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: var(--secondaryColorDark1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    opacity: 0.9;
+    background-color: var(--primaryColorDark2);
+    border-radius: 6px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.dropdown-content .option {
+color: var(--white);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content .option:hover {background-color: var(--primaryColor)}
+
+.show {display:block;}
+
+.dropdown .menu-options-section {
+    border-bottom: solid 1px var(--secondaryColor);
 }
