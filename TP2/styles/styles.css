@@ -1,3 +1,5 @@
+@import url('fototer.css');
+@import url('navBar.css');
 
 :root {
     --primaryColorLight2: #6716D2;
@@ -24,6 +26,7 @@
         height: 14px;
     }
 }
+
 
 body {
     margin: 0;
@@ -52,71 +55,13 @@ p{
     height: 14px;
 }
 
-footer {
-    height: 685px;
-    position:static;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, var(--black) 0%, var(--primaryColor));
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:var(--secondaryColor);
-    color: var(--secondaryColor);
-    padding: 10px 20px;
-}
-
-.navbar-logo {
-    display: flex;
-    align-items: center;
-}
-
-.hamburger-button {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #fff;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.navbar-logo a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navbar-search {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 input {
     padding: 8px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
-}
-
-.search-button {
-    background-color: #555;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-.navbar-icons {
-    display: flex;
-    align-items: center;
 }
 
 .cart-button {
@@ -151,6 +96,7 @@ input {
     width: 50px;
     padding-bottom: 150px;
 }
+
 #arrow-right {
     display: flex;
     flex-direction: column;
@@ -169,6 +115,7 @@ input {
     width: 100%;
     max-width: 1200px;
 }
+
 .carousel::-webkit-scrollbar{
     display: none;
 }
@@ -334,10 +281,12 @@ input {
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .loginForm div p{
     margin-block-start: 0;
     
 }
+
 .loginForm div{
     height: fit-content;
 }
@@ -357,7 +306,6 @@ input {
     font-weight: 800;
     line-height: normal;
 }
-
 
 .button-primary:hover {
     border: 1px solid var(--black);
