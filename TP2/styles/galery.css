@@ -1,0 +1,43 @@
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    width: calc(25% - 20px); /* Para mostrar 4 tarjetas por fila con un espacio de 20px entre ellas */
+    height: 300px;
+    margin: 10px;
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 3%;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+.gallery-card .card-price {
+    padding-right: 155px;
+}
+
+.gallery-card-details {
+    padding: 10px;
+}
+
+.gallery-card h3 {
+    margin: 0;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+}
