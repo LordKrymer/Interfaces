@@ -17,6 +17,7 @@
     text-align: center;
     transition: transform 0.2s ease-in-out;
     border-radius: 3%;
+    position: relative;
 }
 
 .gallery-card img {
@@ -40,4 +41,32 @@
 
 .gallery-card:hover {
     transform: scale(1.05);
+}
+
+.added{
+    position: absolute;
+    right: -6px;
+    top: 10px;
+    z-index: 10;
+    background-color: var(--highLight);
+    rotate: 30deg;
+}
+
+.line1{
+    border-top: solid var(--highLight);
+    width: 50px;
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    rotate: 8deg;
+    z-index: -1;
+}
+.line2{
+    border-right: solid var(--highLight);
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    rotate: -12deg;
+    z-index: -1;
 }
