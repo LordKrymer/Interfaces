@@ -32,6 +32,7 @@ function inyectionJs(route){
 
 function routUrl(ruta){// muestra la ruta url
     history.pushState({page:ruta+".html"},"index","/"+ruta);
+    updateBreadcrumbs(ruta);
 }
 
 function changeRoute(ruta){
@@ -40,7 +41,9 @@ function changeRoute(ruta){
 }
 
 window.addEventListener('popstate', function(){
-    fetchFile(history.state.page);
+    changeRoute(history.state.page);
+    updateBreadcrumbs(history.state.page);
+
 });
 
 document.querySelector('.hamburger-button').addEventListener('click', deployMenu);
@@ -60,4 +63,20 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+
+
+function updateBreadcrumbs(actualRoute) {
+    let breadCrumb = document.getElementById("breadcrumbs");
+    let currentBreadcrumb = [];
+    document.querySelectorAll("li").forEach((e)=>{currentBreadcrumb.push(e.textContent)});
+
+    if(!currentBreadcrumb.includes(actualRoute)) {
+        let li = document.createElement("li");
+        let a = document.createElement("a");
+        a.innerText = actualRoute ;
+        li.appendChild(a);
+        breadCrumb.appendChild(li);
+    }
 }

@@ -144,3 +144,22 @@ display: block;
 .dropdown .menu-options-section {
     border-bottom: solid 1px var(--secondaryColor);
 }
+
+#breadcrumbs {
+    background-color: transparent;
+    padding: 10px;display: inline-flex;
+}
+
+#breadcrumbs li {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#breadcrumbs a:hover {
+    text-decoration: underline;
+}
