@@ -27,41 +27,33 @@
 
     --familyFontNunito:'Nunito Sans', sans-serif;
 
-    --buttonText{
-        font-family: var(--familyFontNunito);
-        height: 14px;
-    }
 }
 
+body,h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family:'Nunito Sans', sans-serif;
     background-color: var(--black);
 }
 
 h1 {
-    font-family: var(--familyFontNunito);
     height: 48px;
 }
 
 h2 {
-    font-family: var(--familyFontNunito);
     height: 32px;
 }
 
 h3 {
-    font-family: var(--familyFontNunito);
     height: 24px;
 }
 
 p{
-    font-family: var(--familyFontNunito);
     height: 14px;
 }
-
-
 
 input {
     padding: 8px;
@@ -79,7 +71,7 @@ input {
     color: var(--white);
     box-shadow: inset 1px 1px 5px var(--black);
     text-align: center;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 800;

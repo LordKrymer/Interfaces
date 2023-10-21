@@ -10,7 +10,7 @@
 
 .gallery-card {
     width: calc(25% - 20px); /* Para mostrar 4 tarjetas por fila con un espacio de 20px entre ellas */
-    height: 300px;
+    height: 325px;
     margin: 10px;
     background-color: var(--secondaryColor);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -51,6 +51,8 @@
     background-color: var(--highLight);
     rotate: 30deg;
     padding: 2px 6px;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
 }
 
 .line1{
