@@ -27,7 +27,6 @@
 }
 
 .navbar-search {
-    margin-inline: 350px;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -147,12 +146,24 @@ display: block;
 
 #breadcrumbs {
     background-color: transparent;
-    padding: 10px;display: inline-flex;
+    padding: 0 24px;
+    display: inline-flex;
+    margin-top: 5px;
 }
 
 #breadcrumbs li {
     display: inline-flex;
     margin-right: 10px;
+}
+
+#breadcrumbs li::after{
+    color: #007bff;
+    margin-left: 10px;
+    content: "/";
+}
+
+#breadcrumbs :last-child::after {
+    content: none;
 }
 
 #breadcrumbs a {
