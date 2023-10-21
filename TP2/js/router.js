@@ -65,18 +65,20 @@ window.onclick = function(event) {
   }
 }
 
-
-
 function updateBreadcrumbs(actualRoute) {
     let breadCrumb = document.getElementById("breadcrumbs");
-    let currentBreadcrumb = [];
-    document.querySelectorAll("li").forEach((e)=>{currentBreadcrumb.push(e.textContent)});
+    let breadcrumbItems = Array.from(breadCrumb.querySelectorAll("li"));
+    let index = breadcrumbItems.findIndex((item) => item.textContent === actualRoute);
 
-    if(!currentBreadcrumb.includes(actualRoute)) {
+    if (index === -1) {
         let li = document.createElement("li");
         let a = document.createElement("a");
-        a.innerText = actualRoute ;
+        a.innerText = actualRoute;
         li.appendChild(a);
         breadCrumb.appendChild(li);
+    } else {
+        for (let i = breadcrumbItems.length - 1; i > index; i--) {
+            breadCrumb.removeChild(breadcrumbItems[i]);
+        }
     }
 }
