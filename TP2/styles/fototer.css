@@ -60,3 +60,14 @@ footer {
 .network-logo {
     background-blend-mode: exclusion;
 }
+
+@media (max-width: 800px) {
+
+    footer{
+        display: none;
+    }
+
+    .footer-message h3{
+        display: none;
+    }
+}
