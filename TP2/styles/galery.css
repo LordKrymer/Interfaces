@@ -73,3 +73,40 @@
     rotate: -12deg;
     z-index: -1;
 }
+
+@media (max-width: 800px) {
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery-card {
+        width: calc(50% - 20px); /* Para mostrar 4 tarjetas por fila con un espacio de 20px entre ellas */
+        height: 325px;
+        margin: 10px;
+        background-color: var(--secondaryColor);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        border-radius: 3%;
+        position: relative;
+    }
+
+    .gallery-card-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px 10px 10px;
+    }
+
+    .gallery-card .button-secondary{
+        width: 100%;
+    }
+    .gallery-card .card-price{
+        padding-right: 0;
+    }
+}
